@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name={{360_original}}
+Description={{Original Xbox 360 Boot Animation}}
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/{{360_original}}/animation
+ScriptFile=/usr/share/plymouth/themes/{{360_original}}/360_original.script
