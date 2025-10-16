@@ -4,5 +4,5 @@ Description={{Original Xbox 360 Boot Animation}}
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/x360/animation
+ImageDir=/usr/share/plymouth/themes/x360
 ScriptFile=/usr/share/plymouth/themes/x360/x360.script
