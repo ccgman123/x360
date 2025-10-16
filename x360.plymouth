@@ -1,6 +1,6 @@
 [Plymouth Theme]
-Name={{360_original}}
-Description={{Original Xbox 360 Boot Animation}}
+Name=x360
+Description=Original Xbox 360 Boot Animation
 ModuleName=script
 
 [script]
