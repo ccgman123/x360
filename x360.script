@@ -6,8 +6,10 @@ Window.SetBackgroundBottomColor (0.0, 0.00, 0.0);
 
 # Image animation loop
 for (i = 1; i < 236; i++)
-  flyingman_image[i] = Image("progress-" + i + ".png");
+  flyingman_image[i] = Image("progress-" + i + ".png").Scale(1.5);
 flyingman_sprite = Sprite();
+
+#scaled_flower_image = flower_image.Scale(flower_image.GetWidth()  * 2
 
 
 flyingman_sprite.SetX(Window.GetWidth() / 2 - flyingman_image[1].GetWidth() / 2); # Place in the centre
