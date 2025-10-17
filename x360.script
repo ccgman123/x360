@@ -11,7 +11,6 @@ for (i = 1; i < 264; i++)
   end_image[i] = Image("progress-236.png");  
   
   
-flyingman_image = flyingman_image + end_image;
 flyingman_sprite = Sprite();
 
 flyingman_sprite.SetX(Window.GetWidth() / 2 - flyingman_image[1].GetWidth() / 2); # Place in the centre
@@ -22,8 +21,7 @@ progress = 1;
 
 fun refresh_callback ()
   {
-    
-    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 1) % 500]);
+    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 1) % 236]);
     progress++;
   }
   
