@@ -9,6 +9,9 @@ for (i = 1; i < 236; i++)
   flyingman_image[i] = Image("progress-" + i + ".png");
 for (i = 1; i < 264; i++)
   end_image[i] = Image("progress-236.png");  
+  
+  
+flyingman_image = flyingman_image + end_image;
 flyingman_sprite = Sprite();
 
 flyingman_sprite.SetX(Window.GetWidth() / 2 - flyingman_image[1].GetWidth() / 2); # Place in the centre
@@ -19,11 +22,8 @@ progress = 1;
 
 #fun refresh_callback ()
   {
-    if(progress < 237) {
-      flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 1) % 236]);
-    } else {
-      flyingman_sprite.SetImage(end_image[Math.Int(progress / 1) % 264]);
-    }
+    
+    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 1) % 500]);
     progress++;
   }
   
