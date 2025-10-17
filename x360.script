@@ -20,13 +20,13 @@ flyingman_sprite.SetY(Window.GetHeight() / 2 - flyingman_image[1].GetHeight() / 
 
 progress = 1;
 
-#fun refresh_callback ()
+fun refresh_callback ()
   {
     
     flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 1) % 500]);
     progress++;
   }
   
-#Plymouth.SetRefreshFunction (refresh_callback);
+Plymouth.SetRefreshFunction (refresh_callback);
 
 
