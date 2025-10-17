@@ -6,12 +6,12 @@ Window.SetBackgroundBottomColor (0.0, 0.00, 0.0);
 
 # Image animation loop
 for (i = 1; i < 500; i++)
-  flyingman_image[i] = Image("progress-236.png");
-  #if(i < 236) {
-  #flyingman_image[i] = Image("progress-" + i + ".png");
-  #} else {
-  #  flyingman_image[i] = Image("progress-236.png"); 
-  #}  
+  #flyingman_image[i] = Image("progress-236.png");
+  if(i < 236) {
+    flyingman_image[i] = Image("progress-" + i + ".png");
+  } else {
+    flyingman_image[i] = Image("progress-236.png"); 
+  }  
 flyingman_sprite = Sprite();
 
 flyingman_sprite.SetX(Window.GetWidth() / 2 - flyingman_image[1].GetWidth() / 2); # Place in the centre
