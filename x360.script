@@ -4,7 +4,13 @@ Window.SetBackgroundTopColor (0.0, 0.00, 0.0);
 # an equally nice colour on the bottom
 Window.SetBackgroundBottomColor (0.0, 0.00, 0.0);
 
-  
+  # Image animation loop
+for (i = 1; i < 500; i++)
+  if (i < 236) {
+    flyingman_image[i] = Image("progress-" + i + ".png");
+  } else {
+    flyingman_image[i] = Image("progress-236.png");
+  }
    
 flyingman_sprite = Sprite();
 
